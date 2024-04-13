@@ -1,27 +1,63 @@
 @import-normalize;
 
+:root {
+  --color-primary: #F9F9F9;
+  --color-secondary: #686868;
+  --font-family-primary: 'Gilroy';
+  --font-family-secondary: 'SF Pro Text';
+  --color-background: #141414;
+  --color-background-primary: #1f1f1f;
+  --color-background-secondary: #262626;
+  --color-nav-link:#4F92F7;
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  src: local("Gilroy"),
+    url("./fonts/Gilroy/Gilroy-Medium.ttf") format("truetype"),
+    url('./fonts/Gilroy/Gilroy-Medium.eot') format('embedded-opentype'),
+    url('./fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+    url('./fonts/Gilroy/Gilroy-Medium.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 700;
+  src: local("Gilroy"),
+    url("./fonts/Gilroy/Gilroy-Bold.ttf") format("truetype"),
+    url('./fonts/Gilroy/Gilroy-Bold.eot') format('embedded-opentype'),
+    url('./fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+    url('./fonts/Gilroy/Gilroy-Bold.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-weight: 600;
+  src: local("SF Pro Text"),
+    url("./fonts/SF-Pro-Text/SFProDisplay-Semibold.ttf") format("truetype"),
+    url('./fonts/SF-Pro-Text/SFProDisplay-Semibold.eot') format('embedded-opentype'),
+    url('./fonts/SF-Pro-Text/SFProDisplay-Semibold.woff') format('woff'),
+    url('./fonts/SF-Pro-Text/SFProDisplay-Semibold.woff2') format('woff2')
+}
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 12px;
-  background: rgba(80, 80, 80, 0.2);
-}
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-family-primary);
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: var(--font-family-primary);
 }
 
 h1,
@@ -40,4 +76,14 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+img {
+  display: block;
+  line-height: 0;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
 }
