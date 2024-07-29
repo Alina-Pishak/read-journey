@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply h-full min-h-screen bg-bgPrimary font-primary font-medium text-colorPrimary;
+  }
+}
+
+/* @layer utilities {
+  .transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .title {
+    @apply;
+  }
+
+  .subtitle {
+    @apply;
+  }
+} */
