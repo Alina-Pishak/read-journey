@@ -2,21 +2,7 @@
   "title": "Read Journey",
   "description": "Expand your mind, reading a book.",
   "keywords": "read, book, library",
-  "icons": [
-    {
-      "url": "/favicon/favicon.ico"
-    },
-    {
-      "url": "/favicon/favicon-16x16.png",
-      "rel": "icon",
-      "type": "image/png"
-    },
-    {
-      "url": "/favicon/favicon-32x32.png",
-      "rel": "icon",
-      "type": "image/png"
-    }
-  ],
+  "icons": { "icon": "/images/favicon.png" },
   "ogTitle": "Read Journey",
   "ogDescription": "Expand your mind, reading a book.",
   "ogSiteName": "Read Journey",

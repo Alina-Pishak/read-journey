@@ -25,6 +25,7 @@ const gilroy = localFont({
 export const metadata: Metadata = {
   title: metaData.title,
   description: metaData.description,
+  icons: metaData.icons,
 };
 
 export default function RootLayout({
@@ -34,7 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={gilroy.variable}>{children}</body>
+      <body className={gilroy.variable}>
+        {/* header */}
+        <main>{children}</main>
+        {/* footer */}
+      </body>
     </html>
   );
 }

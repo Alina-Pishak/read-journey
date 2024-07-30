@@ -8,16 +8,8 @@
   }
 }
 
-/* @layer utilities {
+@layer utilities {
   .transition {
     @apply transition-all duration-300 ease-in-out;
   }
-
-  .title {
-    @apply;
-  }
-
-  .subtitle {
-    @apply;
-  }
-} */
+}
