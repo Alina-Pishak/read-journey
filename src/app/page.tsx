@@ -2,6 +2,7 @@
 
 import Button from "@/components/ui/Button";
 import LinkButton from "@/components/ui/LinkButton";
+import Logo from "@/components/ui/Logo";
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <Button variant="secondary" onClick={() => console.log("first")}>
         sgsgsfs
       </Button>
-      <LinkButton href="">dfsdfs</LinkButton>
+      <LinkButton href="/register">dfsdfs</LinkButton>
+      <Logo />
     </>
   );
 }

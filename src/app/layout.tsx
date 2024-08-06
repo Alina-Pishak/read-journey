@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={gilroy.variable}>
+      <body className={`${gilroy.variable}`}>
         {/* header */}
         <main>{children}</main>
         {/* footer */}

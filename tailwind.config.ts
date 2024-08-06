@@ -20,13 +20,21 @@ const config: Config = {
         colorSecondary: "#686868",
         colorThird: "#1F1F1F",
         bgPrimary: "#141414",
-        bgSecondary: "1F1F1F",
+        bgSecondary: "#1F1F1F",
         bgThird: "#262626",
         success: "#30B94D",
         accent: "#4F92F7",
       },
       fontFamily: {
         primary: ["var(--font-gilroy)"],
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "20px",
+          sm: "20px",
+          md: "32px",
+        },
       },
     },
   },
