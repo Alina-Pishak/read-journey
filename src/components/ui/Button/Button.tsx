@@ -20,7 +20,7 @@ const Button: FC<IButtonProps> = ({
         variant === "primary" &&
           "border border-solid border-[rgba(249,249,249,0.2)] hover:bg-colorPrimary hover:text-colorThird  focus:bg-colorPrimary focus:text-colorThird",
         variant === "secondary" &&
-          "text-colorThird bg-colorPrimary border border-solid border-transparent hover:bg-transparent focus:bg-transparent hover:border-[rgba(249,249,249,0.2)] hover:text-colorPrimary focus:border-[rgba(249,249,249,0.2)] focus:text-colorPrimary",
+          "text-colorThird bg-colorPrimary border border-solid border-transparent hover:bg-transparent focus:bg-transparent hover:border-[rgba(249,249,249,0.2)] hover:text-colorPrimary focus:border-[rgba(249,249,249,0.2)] focus:text-colorPrimary md:text-xl",
         className
       )}
     >

@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     screens: {
@@ -12,7 +13,7 @@ const config: Config = {
       smOnly: { max: "767.98px" },
       md: "768px",
       mdOnly: { min: "768px", max: "1439.98px" },
-      xl: "1440px",
+      xl: "1280px",
     },
     extend: {
       colors: {

@@ -29,7 +29,7 @@ const Form: FC<IFormProps> = ({
           <input
             {...register(field)}
             placeholder={placeholder}
-            className="rounded-xl p-[14px] bg-bgThird mb-2 w-full font-medium text-xs leading-[1.33] tracking-[-0.02em] placeholder:text-colorSecondary"
+            className="rounded-xl p-[14px] bg-bgThird mb-2 w-full font-medium text-xs leading-[1.33] tracking-[-0.02em] placeholder:text-colorSecondary md:text-sm md:py-4 md:mb-[14px]"
           />
 
           {errors[field]?.message &&
@@ -39,8 +39,12 @@ const Form: FC<IFormProps> = ({
         </label>
       ))}
 
-      <div className="flex items-center gap-[14px] mt-5">
-        <Button type="submit" variant="secondary" className="py-3 px-7">
+      <div className="flex justify-center items-center gap-[14px] mt-5 md:justify-start md:mt-[82px]">
+        <Button
+          type="submit"
+          variant="secondary"
+          className="py-3 px-7 md:py-4 md:px-[54px]"
+        >
           {buttonText}
         </Button>
         <LinkButton href="">{linkButtonText}</LinkButton>
