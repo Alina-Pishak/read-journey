@@ -16,7 +16,7 @@ const Logo: FC<LogoProps> = ({ className }) => {
       )}
     >
       <LogoIcon width={42} height={17} className="w-[42px] h-[17px]" />
-      <span className="hidden md:inline md:uppercase md:font-bold md:text-lg md:tracking-[0.02em] ">
+      <span className="hidden md:leading-none md:inline md:uppercase md:font-bold md:text-lg md:tracking-[0.02em] ">
         read journey
       </span>
     </Link>

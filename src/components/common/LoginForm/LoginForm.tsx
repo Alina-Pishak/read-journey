@@ -24,6 +24,7 @@ const LoginForm = () => {
       handleFormData={() => console.log("first")}
       buttonText="Log in"
       linkButtonText="Don’t have an account?"
+      variant="login"
     />
   );
 };
