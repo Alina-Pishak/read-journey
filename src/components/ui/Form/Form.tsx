@@ -24,13 +24,17 @@ const Form: FC<IFormProps> = ({
     handleSubmit,
     formState: { errors },
   } = useForm({ resolver: yupResolver(validationSchema) });
-  const onSubmit = handleSubmit((data) => console.log(data));
+  const onSubmit = handleSubmit(handleFormData);
 
   return (
     <form onSubmit={onSubmit} className={className}>
       {fields.map(({ field, placeholder }, index) => (
         <label key={index}>
-          <Input register={{ ...register(field) }} placeholder={placeholder} />
+          <Input
+            register={{ ...register(field) }}
+            placeholder={placeholder}
+            isLast={index === fields.length - 1}
+          />
 
           {errors[field]?.message &&
             typeof errors[field]?.message === "string" && (
@@ -41,9 +45,9 @@ const Form: FC<IFormProps> = ({
 
       <div
         className={clsx(
-          "flex justify-center items-center gap-[14px] mt-5 md:justify-start md:mt-[82px]",
-          variant === "login" && "xl:mt-[146px]",
-          variant === "filters" && "justify-start"
+          "flex justify-start items-center gap-[14px] mt-5 md:mt-[82px]",
+          variant === "login" && "sm:mt-[72px] md:mt-[146px] xl:mt-[146px]",
+          variant === "filters" && "justify-start mt-5 md:mt-5 xl:mt-5"
         )}
       >
         <Button

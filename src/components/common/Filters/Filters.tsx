@@ -32,7 +32,7 @@ const Filters = () => {
         buttonText="To apply"
         linkButtonText="Don’t have an account?"
         variant="filters"
-        className="mb-5"
+        className="mb-5 md:mb-0 xl:mb-5"
       />
     </div>
   );

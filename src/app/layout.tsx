@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { metaData } from "@/data";
 
 import "./globals.css";
+import StoreProvider from "./StoreProvider";
 
 const gilroy = localFont({
   src: [
@@ -35,11 +36,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${gilroy.variable}`}>
-        {/* header */}
-        <main>{children}</main>
-        {/* footer */}
-      </body>
+      <StoreProvider>
+        <body className={`${gilroy.variable}`}>
+          {/* header */}
+          <main>{children}</main>
+          {/* footer */}
+        </body>
+      </StoreProvider>
     </html>
   );
 }

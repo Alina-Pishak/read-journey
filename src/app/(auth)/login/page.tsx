@@ -1,8 +1,13 @@
+"use client";
+import LoginForm from "@/components/common/LoginForm";
+import Auth from "@/sections/AuthSection";
+
 export default function LoginPage() {
   return (
-    <div>
-      <h1>Login</h1>
-      {/* Форма логінізації */}
-    </div>
+    <section className="container py-5 ">
+      <Auth>
+        <LoginForm />
+      </Auth>
+    </section>
   );
 }

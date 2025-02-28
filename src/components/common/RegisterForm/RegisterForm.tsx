@@ -1,6 +1,9 @@
 import * as yup from "yup";
 
 import Form from "@/components/ui/Form";
+import { useAppDispatch } from "@/lib/hooks";
+import { registerUserThunk } from "@/lib/user/thunks";
+import { IUSer } from "@/types/user/user";
 
 const validationSchemaRegister = yup.object({
   name: yup
@@ -19,6 +22,11 @@ const validationSchemaRegister = yup.object({
 });
 
 const RegisterForm = () => {
+  const dispatch = useAppDispatch();
+  const handleFormData = async (data: IUSer) => {
+    console.log("first");
+    await dispatch(registerUserThunk(data));
+  };
   return (
     <Form
       fields={[
@@ -27,7 +35,7 @@ const RegisterForm = () => {
         { field: "password", placeholder: "Password:" },
       ]}
       validationSchema={validationSchemaRegister}
-      handleFormData={() => console.log("first")}
+      handleFormData={handleFormData}
       buttonText="Registration"
       linkButtonText="Already have an account?"
     />
